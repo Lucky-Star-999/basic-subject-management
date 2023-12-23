@@ -1,10 +1,12 @@
 package com.example.basicsubjectmanagement.model;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.util.List;
 
 @Entity
+@Data
 public class Subject {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
